@@ -16,18 +16,18 @@ const FlexboxScreen = () => {
 }
 
 const styles = StyleSheet.create({
-    container:{flex:1},
+    container:{flex:1,flexDirection:'row'},
     viewFirst:{width:'100%',borderRadius:10,borderWidth:3,padding:10},
     naranja:{
         flex:1,
         backgroundColor:'orange'
     },
     purpura:{
-        flex:5,
+        flex:1,
         backgroundColor:'purple'
     },
     verde:{
-        flex:4,
+        flex:1,
         backgroundColor:'green'
     },
     text:{fontSize:30,fontWeight:'500'}
