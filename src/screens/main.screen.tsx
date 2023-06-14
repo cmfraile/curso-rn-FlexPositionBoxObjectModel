@@ -1,12 +1,15 @@
-import { StyleSheet , Text, SafeAreaView } from "react-native"
+import { StyleSheet , Text, SafeAreaView, useWindowDimensions } from "react-native"
 
 const MainScreen = () => {
 
+    const { width , height } = useWindowDimensions()
+
     return(
         <SafeAreaView style={styles.container}>
-            <Text style={styles.text}>Hola mundo</Text>
+            <Text style={styles.text}>W : {width} , H : {height}</Text>
         </SafeAreaView>
     )
+
 }
 
 const styles = StyleSheet.create({
