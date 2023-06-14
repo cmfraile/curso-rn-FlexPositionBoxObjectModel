@@ -1,8 +1,8 @@
-import { StyleSheet , Text, SafeAreaView, useWindowDimensions, View } from "react-native"
+import { StyleSheet , Text, SafeAreaView, useWindowDimensions, View } from "react-native";
 
 const MainScreen = () => {
 
-    const { width , height } = useWindowDimensions()
+    //const { width , height } = useWindowDimensions()
 
     return(
         <SafeAreaView style={styles.container}>
@@ -16,8 +16,15 @@ const MainScreen = () => {
 
 const styles = StyleSheet.create({
     container:{flex:1,justifyContent:'center',alignItems:'center'},
-    viewFirst:{width:100,height:100,borderWidth:5,borderColor:'white'},
-    naranja:{backgroundColor:'orange',left:50,position:'absolute'},purpura:{backgroundColor:'purple',position:'absolute',left:0},
+    viewFirst:{width:100,height:100,borderWidth:5,borderColor:'white',borderRadius:10,margin:10},
+    naranja:{
+        backgroundColor:'orange',
+        bottom:0,right:0,
+        position:'absolute'},
+    purpura:{
+        backgroundColor:'purple',
+        top:0,left:0,
+        position:'absolute'},
     text:{fontSize:30,fontWeight:'500'}
 })
 
