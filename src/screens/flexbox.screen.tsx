@@ -16,8 +16,16 @@ const FlexboxScreen = () => {
 }
 
 const styles = StyleSheet.create({
-    container:{flex:1,flexDirection:'row'},
-    viewFirst:{width:'100%',borderRadius:10,borderWidth:3,padding:10},
+    container:{
+        flex:1,
+        flexDirection:"row",
+        justifyContent:'flex-end',
+        alignItems:'flex-end'
+    },
+    viewFirst:{
+        minHeight:100,minWidth:100,
+        maxHeight:100,maxWidth:100,
+        borderRadius:10,borderWidth:3,padding:10},
     naranja:{
         flex:1,
         backgroundColor:'orange'
